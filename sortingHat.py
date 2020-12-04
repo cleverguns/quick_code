@@ -11,7 +11,7 @@ while sortingHat[0] != "END":
     print (sortingHat[0])
     print ("1: ",sortingHat[1])
     print ("2: ",sortingHat[2])
-    guess = input("Type 1 or 2")
+    guess = input("Type 1 or 2 :")
 
     if guess == "1":
         hogwartsHouse.append(sortingHat[3])
@@ -20,6 +20,7 @@ while sortingHat[0] != "END":
 
     elif guess == "2":
         hogwartsHouse.append(sortingHat[4])
+        
         line = file.readline()
         sortingHat = line.split(",")
 
@@ -49,5 +50,3 @@ if "R" in sortedList[0]:
 
 if "H" in sortedList[0]:
     print("You are in....HUFFLEPUFF!")
-
-
